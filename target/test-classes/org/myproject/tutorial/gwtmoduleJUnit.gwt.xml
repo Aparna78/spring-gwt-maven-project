@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="gwtmodule">
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='org.myproject.tutorial.gwtmodule' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/gwtmodule/greet" class="org.myproject.tutorial.server.GreetingServiceImpl" />
+
+</module>

@@ -1,0 +1,6 @@
+-------------------------------------------------------------------------------
+Test set: org.myproject.tutorial.client.GwtTestgwtmodule
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.496 sec
+testGreetingService(org.myproject.tutorial.client.GwtTestgwtmodule)  Time elapsed: 20.443 sec
+testFieldVerifier(org.myproject.tutorial.client.GwtTestgwtmodule)  Time elapsed: 0.04 sec
