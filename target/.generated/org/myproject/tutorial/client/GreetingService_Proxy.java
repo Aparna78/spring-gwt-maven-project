@@ -18,7 +18,7 @@ public class GreetingService_Proxy extends RemoteServiceProxy implements org.myp
   
   public GreetingService_Proxy() {
     super(GWT.getModuleBaseURL(),
-      "greet", 
+      "rpc/greet", 
       SERIALIZATION_POLICY, 
       SERIALIZER);
   }

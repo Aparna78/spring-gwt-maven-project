@@ -1,2 +1,0 @@
-serviceClass: org.myproject.tutorial.client.GreetingService
-path: 63E9FE3CC78CAF961E2F52C9E5EEEBA1.gwt.rpc

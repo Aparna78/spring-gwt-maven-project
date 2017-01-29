@@ -1,10 +1,11 @@
 org\myproject\tutorial\client\gwtmodule$1MyHandler.class
+org\myproject\tutorial\client\GreetingServiceAsync.class
+org\myproject\tutorial\client\gwtmodule$1MyHandler$1.class
+org\myproject\tutorial\client\Messages.class
 org\myproject\tutorial\client\gwtmodule.class
 org\myproject\tutorial\shared\FieldVerifier.class
 org\myproject\tutorial\client\gwtmodule$1.class
-org\myproject\tutorial\client\GreetingServiceAsync.class
 org\myproject\tutorial\client\GreetingService.class
-org\myproject\tutorial\client\Messages.class
-org\myproject\tutorial\client\gwtmodule$1MyHandler$1.class
 org\myproject\tutorial\client\GreetingServiceAsync$Util.class
 org\myproject\tutorial\server\GreetingServiceImpl.class
+org\myproject\tutorial\service\SpringService.class

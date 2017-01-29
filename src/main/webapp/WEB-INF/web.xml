@@ -5,20 +5,34 @@
 
 <web-app>
 
-  <!-- Servlets -->
-  <servlet>
-    <servlet-name>greetServlet</servlet-name>
-    <servlet-class>org.myproject.tutorial.server.GreetingServiceImpl</servlet-class>
-  </servlet>
+  <listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
 
-  <servlet-mapping>
-    <servlet-name>greetServlet</servlet-name>
-    <url-pattern>/gwtmodule/greet</url-pattern>
-  </servlet-mapping>
-
-  <!-- Default page to serve -->
-  <welcome-file-list>
-    <welcome-file>gwtmodule.html</welcome-file>
-  </welcome-file-list>
+	<!-- Front Controller for all GWT Spring based servlets -->
+	<servlet>
+		<servlet-name>gwt</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<!-- Front Controller for all Spring based servlets -->
+	<servlet>
+		<servlet-name>spring</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<!-- Don't forget to declare a gwt-servlet.xml -->
+	<servlet-mapping>
+		<servlet-name>gwt</servlet-name>
+		<url-pattern>gwtmodule/rpc/*</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Don't forget to declare a spring-servlet.xml -->
+	<servlet-mapping>
+		<servlet-name>spring</servlet-name>
+		<url-pattern>myproject/*</url-pattern>
+	</servlet-mapping>
 
 </web-app>
